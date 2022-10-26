@@ -1,6 +1,13 @@
 * {
   list-style-type: none;
   text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 550vh;
+  color: white;
 }
 
 header {
@@ -9,11 +16,14 @@ header {
   background: #000000;
   color: white;
   align-items: center;
-  padding: 13px 19px;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
 }
 
 @media screen and (max-width: 500px) {
   header .logo-header {
+    margin-left: 15px;
     height: 22px;
     width: 77px;
   }
@@ -21,10 +31,100 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 20%;
+    margin-right: 15px;
+  }
+  header .bloc-contact a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
   }
   header .bloc-contact .phone {
+    height: 28px;
+    width: 28px;
+  }
+  header .bloc-contact #menu {
+    display: flex;
     height: 35px;
-    width: 35px;
+  }
+  header .bloc-contact #menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  header .bloc-contact #menu ul li {
+    width: 25px;
+    display: flex;
+    background: white;
+    height: 5px;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home .banner {
+    height: 100vh;
+    background-image: url("../../img/background/background-image.png");
+    background-size: cover;
+  }
+  .home .banner .after {
+    transform: translate(0px, 40px);
+    transition: all 2s;
+    position: relative;
+  }
+  .home .banner div {
+    z-index: 2;
+    transform: translate(-330px, 40px);
+    transition: all 2s;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    width: 67.948%;
+    background: linear-gradient(#F0850B, #EA5D11);
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+  .home .banner div a {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-left: 32px;
+    font-size: 22px;
+    color: #FFFFFF;
+  }
+  .home .banner .div-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-180px);
+    background: transparent;
+  }
+  .home .banner .div-title h1 {
+    text-align: center;
+    font-size: 48px;
+  }
+  .home .banner .div-title p {
+    margin-top: 10px;
+    font-size: 22px;
+    width: 65%;
+    text-align: center;
+  }
+  .home .banner .div-title a {
+    margin: 0;
+    margin-top: 35px;
+    background: #F1E102;
+    color: #000000;
+    font-size: 22px;
+    width: 56.1538%;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 6px;
   }
 }
 

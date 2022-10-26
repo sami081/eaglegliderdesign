@@ -5,13 +5,18 @@ header {
   background: $color-header;
   color: white;
   align-items: center;
-  padding: 13px 19px;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+
 }
 
 //version mobile
 @media screen and (max-width: 500px) {
   header {
+
     .logo-header {
+      margin-left: 15px;
       height: 22px;
       width: 77px;
     }
@@ -19,9 +24,33 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      .phone {
+      width: 20%;
+      margin-right: 15px;
+      a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 35px;
-        width: 35px;
+      }
+      .phone {
+        height: 28px;
+        width: 28px;
+      }
+      #menu{
+        display: flex;
+        height: 35px;
+        ul{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          li{
+            width: 25px;
+            display: flex;
+            background: #ffff;
+            height: 5px;
+            border-radius: 10px;
+          }
+        }
       }
     }
   }
