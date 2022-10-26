@@ -61,14 +61,17 @@ header {
     border-radius: 10px;
   }
 }
+.banner {
+  background-image: url("./img/background/background-image.png");
+  background-size: cover;
+}
+
 @media screen and (max-width: 500px) {
   .home .banner {
     height: 100vh;
-    background-image: url("../../img/background/background-image.png");
-    background-size: cover;
   }
   .home .banner .after {
-    transform: translate(0px, 40px);
+    transform: translate(0px, 50px);
     transition: all 2s;
     position: relative;
   }
@@ -79,7 +82,7 @@ header {
     padding-top: 50px;
     padding-bottom: 30px;
     width: 67.948%;
-    background: linear-gradient(#F0850B, #EA5D11);
+    background: linear-gradient(#f0850b, #ea5d11);
     border-radius: 0 15px 15px 0;
     display: flex;
     flex-direction: column;
@@ -92,7 +95,7 @@ header {
     margin-bottom: 20px;
     margin-left: 32px;
     font-size: 22px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .home .banner .div-title {
     width: 100%;
@@ -115,7 +118,7 @@ header {
   .home .banner .div-title a {
     margin: 0;
     margin-top: 35px;
-    background: #F1E102;
+    background: #f1e102;
     color: #000000;
     font-size: 22px;
     width: 56.1538%;

@@ -1,64 +1,65 @@
+.banner{
+  background-image: url("./img/background/background-image.png");
+  background-size: cover;
+}
 @media screen and (max-width: 500px) {
   .home {
-   
     .banner {
       height: 100vh;
-      background-image: url("../../img/background/background-image.png");
-      background-size: cover;
-      .after{
-       transform: translate(0px,40px);
+      
+     
+      .after {
+        transform: translate(0px, 50px);
         transition: all 2s;
         position: relative;
-       
-    
       }
-      div{
+      div {
         z-index: 2;
-        transform: translate(-330px,40px);
+        transform: translate(-330px, 40px);
         transition: all 2s;
-    padding-top: 50px;
-    padding-bottom: 30px;
-        
+        padding-top: 50px;
+        padding-bottom: 30px;
+
         width: 67.948%;
         // height: 80%;
-        background: linear-gradient(#F0850B,#EA5D11);
+        background: linear-gradient(#f0850b, #ea5d11);
         border-radius: 0 15px 15px 0;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-content: space-around;
-       
 
-        a{
+        a {
           padding: 0;
           margin: 0;
           margin-bottom: 20px;
           margin-left: 32px;
           font-size: 22px;
-          color: #FFFFFF;
+          color: #ffffff;
         }
       }
       .div-title {
         width: 100%;
         display: flex;
         flex-direction: column;
-       align-items: center;
+        align-items: center;
         transform: translateY(-180px);
-         background: transparent;
-        h1{
+        background: transparent;
+        h1 {
           text-align: center;
           font-size: 48px;
         }
-        p{
+        p {
           margin-top: 10px;
           font-size: 22px;
           width: 65%;
           text-align: center;
         }
-        a{margin: 0;
+        a {
+          margin: 0;
           margin-top: 35px;
-          
-          background: #F1E102;
+
+          background: #f1e102;
           color: #000000;
           font-size: 22px;
           width: 56.1538%;
@@ -68,13 +69,8 @@
           justify-content: center;
           align-items: center;
           box-shadow: 3px 3px 6px;
-
-
         }
       }
-      
     }
   }
-  
-  
 }
