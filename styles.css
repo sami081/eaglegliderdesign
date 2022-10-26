@@ -67,15 +67,12 @@ header {
 }
 
 @media screen and (max-width: 500px) {
-  .home .banner {
-    height: 100vh;
-  }
-  .home .banner .after {
+  .banner .after {
     transform: translate(0px, 50px);
     transition: all 2s;
     position: relative;
   }
-  .home .banner div {
+  .banner div {
     z-index: 2;
     transform: translate(-330px, 40px);
     transition: all 2s;
@@ -89,15 +86,16 @@ header {
     justify-content: space-around;
     align-content: space-around;
   }
-  .home .banner div a {
+  .banner div a {
     padding: 0;
     margin: 0;
     margin-bottom: 20px;
     margin-left: 32px;
     font-size: 22px;
-    color: #ffffff;
+    color: white;
+    font-weight: bold;
   }
-  .home .banner .div-title {
+  .banner .div-title {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -105,17 +103,17 @@ header {
     transform: translateY(-180px);
     background: transparent;
   }
-  .home .banner .div-title h1 {
+  .banner .div-title h1 {
     text-align: center;
     font-size: 48px;
   }
-  .home .banner .div-title p {
+  .banner .div-title p {
     margin-top: 10px;
     font-size: 22px;
     width: 65%;
     text-align: center;
   }
-  .home .banner .div-title a {
+  .banner .div-title a {
     margin: 0;
     margin-top: 35px;
     background: #f1e102;
@@ -129,6 +127,82 @@ header {
     align-items: center;
     box-shadow: 3px 3px 6px;
   }
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 2750px;
+  justify-content: space-evenly;
+}
+.about h2 {
+  color: #ea5d11;
+}
+.about .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about .card .picture {
+  border-radius: 15px;
+  width: 79.48%;
+}
+.about .card .youssouf {
+  width: 88.205%;
+  height: 647px;
+}
+.about .card .youssouf .border-youssouf {
+  width: 93.63%;
+  height: 629px;
+}
+.about .card .sami {
+  width: 88.205%;
+  height: 733px;
+}
+.about .card .sami .border-sami {
+  width: 93.63%;
+  height: 715px;
+}
+.about .card .information {
+  transform: translateY(-45px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  border-radius: 40px;
+}
+.about .card .information .border {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border: solid 4px #f0850b;
+  border-radius: 30px;
+}
+.about .card .information .border h3 {
+  color: #ea5d11;
+  font-size: 28px;
+}
+.about .card .information .border p {
+  width: 50%;
+  font-size: 22px;
+}
+.about aside {
+  display: flex;
+  justify-content: center;
+}
+.about aside p {
+  text-align: center;
+  width: 50%;
+  color: #EA5D11;
+  font-size: 22px;
+}
+
+.separation {
+  background: linear-gradient(#F2B704, #F0850B);
+  width: 100%;
+  height: 32px;
 }
 
 /*# sourceMappingURL=styles.css.map */

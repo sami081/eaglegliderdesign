@@ -1,0 +1,77 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ height: 2750px;
+  justify-content: space-evenly;
+  h2 {
+    color: #ea5d11;
+  }
+  .card {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .picture {
+      border-radius: 15px;
+      width: 79.48%;
+    }
+    .youssouf {
+      width: 88.205%;
+      height: 647px;
+      .border-youssouf {
+        width: 93.63%;
+        height: 629px;
+      }
+    }
+    .sami{
+      width: 88.205%;
+      height: 733px;
+      .border-sami {
+        width: 93.63%;
+        height: 715px;;
+      }
+    }
+    .information {
+      transform: translateY(-45px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000000;
+
+      border-radius: 40px;
+      .border {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+
+        border: solid 4px #f0850b;
+        border-radius: 30px;
+        h3 {
+          color: #ea5d11;
+          font-size: 28px;
+        }
+        p {
+          width: 50%;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  aside{
+display: flex;
+justify-content: center;
+    p{ text-align: center;
+      width: 50%;
+      color: #EA5D11;
+      font-size: 22px;
+    }
+  }
+}
+.separation {
+  background: linear-gradient(#F2B704,#F0850B);
+  width: 100%;
+  height: 32px;
+}

@@ -3,9 +3,9 @@
   background-size: cover;
 }
 @media screen and (max-width: 500px) {
-  .home {
+ 
     .banner {
-      height: 100vh;
+      // height: 100vh;
 
       .after {
         transform: translate(0px, 50px);
@@ -34,7 +34,8 @@
           margin-bottom: 20px;
           margin-left: 32px;
           font-size: 22px;
-          color: #ffffff;
+          color: #ffff;
+          font-weight: bold;
         }
       }
       .div-title {
@@ -72,4 +73,4 @@
       }
     }
   }
-}
+
