@@ -1,0 +1,31 @@
+* {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background: #000000;
+  color: white;
+  align-items: center;
+  padding: 13px 19px;
+}
+
+@media screen and (max-width: 500px) {
+  header .logo-header {
+    height: 22px;
+    width: 77px;
+  }
+  header .bloc-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .bloc-contact .phone {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

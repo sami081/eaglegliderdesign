@@ -1,0 +1,28 @@
+// all version
+header {
+  display: flex;
+  justify-content: space-between;
+  background: $color-header;
+  color: white;
+  align-items: center;
+  padding: 13px 19px;
+}
+
+//version mobile
+@media screen and (max-width: 500px) {
+  header {
+    .logo-header {
+      height: 22px;
+      width: 77px;
+    }
+    .bloc-contact {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .phone {
+        height: 35px;
+        width: 35px;
+      }
+    }
+  }
+}
