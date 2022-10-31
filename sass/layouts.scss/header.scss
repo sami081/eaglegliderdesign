@@ -1,7 +1,7 @@
 // all version
 header {
   display: flex;
-  justify-content: space-between;
+  
   background: $color-header;
   color: white;
   align-items: center;
@@ -12,8 +12,9 @@ header {
 }
 
 //version mobile
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
   header {
+    justify-content: space-between;
 .menu-dekstop{
   display: none;
 }
@@ -57,9 +58,15 @@ header {
     }
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 500px) {
 header{
-  height: 74px;
+  height: 50px;
+  justify-content: space-around;
+  .logo-header {
+    height: 2em;
+    width: 4em;
+  }
+
   .bloc-contact{
     display: none;
   }
@@ -73,7 +80,7 @@ header{
       li{
         a{
           color: #D8D9D9;
-          font-size: 28px;
+         
         }
       }
     }

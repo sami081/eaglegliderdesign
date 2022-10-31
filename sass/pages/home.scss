@@ -1,26 +1,52 @@
 .banner {
   background-image: url("./img/background/background-image.png");
   background-size: cover;
+  display: flex;
+  a{
+    margin-top: 35px;
+
+    background: #f1e102;
+    color: #000000;
+    font-size: 28px;
+    width: 52.4%;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 6px;
+  }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 499px) {
  
     .banner {
+    
+      justify-content: left;
       height: 100vh;
 
       .after {
-        transform: translate(0px, 50px);
+        z-index: 2;
+        width: 67.948%;
+        max-width: 250px;
+        // transform: translate(0px, 50px);
         transition: all 2s;
+        a{
+          color: #ffff;
+          transition: all 3s;
+        }
        
       }
       div {
         position: fixed;
-        z-index: 3;
-        transform: translate(-330px, 40px);
+       
+        // transform: translate(-3300px, 40px);
         transition: all 2s;
         padding-top: 50px;
         padding-bottom: 30px;
+        width: 0%;
+        
 
-        width: 67.948%;
+       
         // height: 80%;
         background: linear-gradient(#f0850b, #ea5d11);
         border-radius: 0 15px 15px 0;
@@ -35,19 +61,23 @@
           margin-bottom: 20px;
           margin-left: 32px;
           font-size: 22px;
-          color: #ffff;
+          color: transparent;
           font-weight: bold;
+          transition: all 1.8s;
         }
       }
       .div-title {
+        padding: 0;
+        height: 80%;
         position: relative;
-        z-index: 2;
+        z-index: 1;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         transform: translateY(75px);
         background: transparent;
+        justify-content: space-around;
         h1 {
           text-align: center;
           font-size: 3em;
@@ -115,22 +145,28 @@
         }
         a {
           margin: 0;
-          margin-top: 35px;
-
-          background: #f1e102;
-          color: #000000;
-          font-size: 28px;
-          width: 52.4%;
-          height: 45px;
-          border-radius: 10px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          box-shadow: 3px 3px 6px;
+         
         }
       }
       .after-title{
         // transform: translateY(130px);
+      }
+    }
+  }
+
+  @media screen and (min-width: 500px) {
+    .banner {
+      height: 550px;
+      justify-content: space-around;
+      flex-direction: column;
+      .div-menu{
+        display: none;
+      }
+      .div-title{
+        padding-left: 20px;
+        .hook{
+          margin-top: 15px !important;
+        }
       }
     }
   }
