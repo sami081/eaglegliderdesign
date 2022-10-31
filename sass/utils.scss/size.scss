@@ -6,6 +6,9 @@
   .hook{
     font-size: 1.4em !important;
   }
+  .description{
+    font-size: 1.2em;
+  }
 
 }
 @media screen and (min-width: 399px) and (max-width : 499px){
@@ -16,13 +19,18 @@
   .hook{
     font-size: 1.78em !important;
   }
-
+  .description{
+    font-size: 1.5em;
+  }
   
 } 
 @media screen and (min-width: 500px) and (max-width : 700px){
   .size-h1{
     font-size: 3.2em !important;
    
+  }
+  .description{
+    font-size: 1.2em;
   }
   
 } 

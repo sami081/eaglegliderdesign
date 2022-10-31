@@ -5,6 +5,9 @@
   .hook {
     font-size: 1.4em !important;
   }
+  .description {
+    font-size: 1.2em;
+  }
 }
 @media screen and (min-width: 399px) and (max-width: 499px) {
   .size-h1 {
@@ -13,10 +16,16 @@
   .hook {
     font-size: 1.78em !important;
   }
+  .description {
+    font-size: 1.5em;
+  }
 }
 @media screen and (min-width: 500px) and (max-width: 700px) {
   .size-h1 {
     font-size: 3.2em !important;
+  }
+  .description {
+    font-size: 1.2em;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 1024px) {
@@ -158,6 +167,7 @@ header {
 }
 .banner a {
   margin-top: 35px;
+  font-weight: bolder;
   background: #f1e102;
   color: #000000;
   font-size: 28px;
@@ -169,11 +179,23 @@ header {
   align-items: center;
   box-shadow: 3px 3px 6px;
 }
+.banner .div-menu {
+  display: none;
+}
 
 @media screen and (max-width: 499px) {
   .banner {
     justify-content: left;
     height: 100vh;
+  }
+  .banner .div-menu {
+    display: flex;
+  }
+  .banner .div-menu a {
+    background-color: transparent !important;
+    border-radius: 0% !important;
+    border: none !important;
+    box-shadow: none !important;
   }
   .banner .after {
     z-index: 2;
@@ -246,51 +268,37 @@ header {
     box-shadow: 3px 3px 6px;
   }
 }
-@media screen and (min-width: 700px) {
-  .banner {
-    height: 100vh;
-    display: flex;
-  }
-  .banner .div-menu {
-    display: none;
-  }
-  .banner .div-title {
-    margin-left: 62px;
-    width: 35.22%;
-    display: flex;
-    flex-direction: column;
-    transform: translateY(205px);
-    background: transparent;
-  }
-  .banner .div-title h1 {
-    width: 85%;
-    text-align: left;
-    font-size: 3em;
-  }
-  .banner .div-title p {
-    margin-top: 10px;
-    font-size: 1.5em;
-    width: 85%;
-    text-align: left;
-  }
-  .banner .div-title a {
-    margin: 0;
-  }
-}
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 500px) and (max-width: 1023px) {
   .banner {
     height: 550px;
     justify-content: space-around;
     flex-direction: column;
-  }
-  .banner .div-menu {
-    display: none;
   }
   .banner .div-title {
     padding-left: 20px;
   }
   .banner .div-title .hook {
     margin-top: 15px !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .banner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .banner .div-title {
+    width: 40%;
+    color: #000000;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 20px;
+  }
+  .banner .div-title a {
+    width: 8.5em !important;
   }
 }
 .about {
@@ -318,6 +326,14 @@ header {
   border-radius: 30px;
   height: 95%;
   width: 95%;
+}
+.about .information .border h3 {
+  border-bottom: #F0850B solid 2px;
+  line-height: 60px;
+}
+.about .information .border p {
+  overflow: auto;
+  margin-bottom: 15px;
 }
 .about .picture {
   border-radius: 15px;
@@ -359,19 +375,19 @@ header {
   }
   .about .card .youssouf {
     width: 88.205%;
-    height: 647px;
+    height: 550px;
   }
   .about .card .youssouf .border-youssouf {
-    width: 93.63%;
-    height: 629px;
+    width: 91%;
+    height: 95%;
   }
   .about .card .sami {
     width: 88.205%;
-    height: 733px;
+    height: 600px;
   }
   .about .card .sami .border-sami {
-    width: 93.63%;
-    height: 715px;
+    width: 91%;
+    height: 95%;
   }
   .about .card .information {
     transform: translateY(-45px);
@@ -391,56 +407,7 @@ header {
     font-size: 28px;
   }
   .about .card .information .border p {
-    width: 50%;
-    font-size: 22px;
-  }
-}
-@media screen and (min-width: 700px) {
-  section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 1550px;
-    justify-content: space-evenly;
-  }
-  section .card {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 410px;
-  }
-  section .card .picture {
-    width: 30.02%;
-    height: 100%;
-  }
-  section .card .sami {
-    transform: translateX(50px) !important;
-  }
-  section .card .sami h3 {
-    margin-right: 20px;
-    text-align: right;
-  }
-  section .card .sami p {
-    margin-right: 20px;
-    text-align: right;
-  }
-  section .card .information {
-    width: 56.8%;
-    height: 90%;
-    transform: translateX(-50px);
-    text-align: left;
-  }
-  section .card .information h3 {
-    color: #f0850b;
-    margin-left: 50px;
-    margin-top: 30px;
-    font-size: 28px;
-  }
-  section .card .information p {
-    margin-left: 50px;
-    margin-top: 30px;
-    font-size: 28px;
+    width: 80%;
   }
 }
 @media screen and (min-width: 500px) {
@@ -449,16 +416,15 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 900px;
   }
   section .sami-card {
-    height: 340px !important;
+    height: 400px !important;
   }
   section .card {
     padding: 30px 0 !important;
     width: 90%;
     display: flex;
-    height: 310px;
+    height: 350px;
     align-items: center;
   }
   section .card .picture {
@@ -471,8 +437,14 @@ header {
   section .card .sami {
     transform: translateX(5%) !important;
   }
+  section .card .sami h3 {
+    width: 2em;
+  }
   section .card .sami p {
     overflow: auto;
+  }
+  section .card .youssouf h3 {
+    width: 4em;
   }
   section .card .information {
     width: 75%;
@@ -486,7 +458,7 @@ header {
     flex-direction: column;
   }
   section .card .information .border h3 {
-    padding-left: 20px;
+    margin-left: 20px;
     padding-top: 15px;
   }
   section .card .information .border p {
