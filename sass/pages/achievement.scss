@@ -1,0 +1,79 @@
+@media screen  and (max-width:500px){
+ .achievement-section {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF !important;
+  width: 100%;
+  justify-content: space-between;
+  h1 {
+    margin-top: 100px;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+width: 100%;
+    background: linear-gradient(#f0850b, #ea5d11);
+  }
+  .all-cards{
+    height: 2700px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around ;
+    .card{
+      height: 400px;
+      width: 84.11%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      img{
+        height: 60%;
+        width: 84.15%;
+        border-radius: 2em;
+      }
+      .information {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-30px);
+        width: 100%;
+        height: 40%;
+        background: black;
+        border-radius: 2em;
+        border: solid 1px #707070;
+        box-shadow: #00000091 10px 10px 6px;
+        .border{
+          height: 75%;
+          width: 92%;
+          border: #F0850B solid 4px;
+          border-radius: 2em;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 20px;
+          h2{
+            border-bottom: 2px solid #F0850B;
+            line-height: 50px;
+            color: #f0850b;
+          }
+          p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFFFFF;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+ }
+ .bis {
+  height: 0px;
+  width: 0px;
+ }
+  
+}

@@ -71,13 +71,20 @@ header{
     display: none;
   }
   .menu-dekstop {
+    height: 100%;
     display: flex;
     width: 70%;
+    align-items: center;
     ul{
+      height: 100%;
+      align-items: center;
       width: 100%;
       display: flex;
       justify-content: space-evenly;
       li{
+        height: 100%;
+        display: flex;
+        align-items: center;
         a{
           color: #D8D9D9;
          

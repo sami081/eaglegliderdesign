@@ -1,7 +1,10 @@
 @import "./utils.scss/variables.scss";
 @import "./utils.scss/size.scss";
+@import"./utils.scss/utils.scss";
 @import "./bases.scss/bases.scss";
 @import "./layouts.scss/header.scss";
 @import "./pages/home.scss";
 @import "./pages/about.scss";
-@import "./layouts.scss/footer.scss"
+@import "./layouts.scss/footer.scss";
+@import"./pages/processus.scss";
+@import"./pages/achievement.scss"

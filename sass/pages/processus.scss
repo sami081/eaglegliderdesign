@@ -1,0 +1,15 @@
+.processus-section {
+  display: flex;
+  flex-direction: column;
+  background: #e8e8e8 !important;
+  justify-content: space-between;
+  h1 {
+    margin-top: 100px;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(#f0850b, #ea5d11);
+  }
+}
