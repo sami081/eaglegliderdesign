@@ -59,11 +59,12 @@
   width: 65%;
 }
 
-.processus {
-  border-bottom: 10px solid #F0850B;
-  border-radius: 100%;
+.bold {
+  padding: 5px;
+  border: 2px solid #F0850B;
+  border-radius: 0.3em;
   color: #F1E102 !important;
-  line-height: 65.5px;
+  line-height: 40.5px;
 }
 
 .processus-section {
@@ -98,6 +99,7 @@ header {
   position: fixed;
   z-index: 3;
   width: 100%;
+  padding: 10px;
 }
 
 @media screen and (max-width: 500px) {
@@ -676,14 +678,67 @@ footer .law a {
   background: linear-gradient(#f0850b, #ea5d11);
 }
 
-@media screen and (max-width: 500px) {
-  .achievement-section {
-    display: flex;
-    flex-direction: column;
-    background: #FFFFFF !important;
-    width: 100%;
-    justify-content: space-between;
-  }
+.bis {
+  height: 0px;
+  width: 0px;
+}
+
+.achievement-section {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF !important;
+  width: 100%;
+  justify-content: space-around;
+}
+.achievement-section h1 {
+  margin-top: 100px;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#f0850b, #ea5d11);
+}
+.achievement-section .all-cards {
+  display: flex;
+}
+.achievement-section .all-cards .card {
+  display: flex;
+}
+.achievement-section .all-cards .card img {
+  border-radius: 1em 1em 0 0;
+}
+.achievement-section .all-cards .card .information {
+  background: black;
+  border-radius: 2em;
+  border: solid 1px #707070;
+  box-shadow: rgba(0, 0, 0, 0.568627451) 10px 10px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.achievement-section .all-cards .card .border {
+  border: #F0850B solid 4px;
+  border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.achievement-section .all-cards .card .border h2 {
+  border-bottom: 2px solid #F0850B;
+  line-height: 50px;
+  color: #f0850b;
+  width: 2em;
+  text-align: center;
+}
+.achievement-section .all-cards .card .border p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+@media screen and (max-width: 499px) {
   .achievement-section h1 {
     margin-top: 100px;
     display: flex;
@@ -697,14 +752,12 @@ footer .law a {
     height: 2700px;
     width: 100%;
     align-items: center;
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
   .achievement-section .all-cards .card {
     height: 400px;
     width: 84.11%;
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -712,46 +765,82 @@ footer .law a {
   .achievement-section .all-cards .card img {
     height: 60%;
     width: 84.15%;
-    border-radius: 2em;
   }
   .achievement-section .all-cards .card .information {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transform: translateY(-30px);
     width: 100%;
     height: 40%;
-    background: black;
-    border-radius: 2em;
-    border: solid 1px #707070;
-    box-shadow: rgba(0, 0, 0, 0.568627451) 10px 10px 6px;
   }
   .achievement-section .all-cards .card .information .border {
     height: 75%;
     width: 92%;
-    border: #F0850B solid 4px;
-    border-radius: 2em;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
   }
-  .achievement-section .all-cards .card .information .border h2 {
-    border-bottom: 2px solid #F0850B;
-    line-height: 50px;
-    color: #f0850b;
-  }
-  .achievement-section .all-cards .card .information .border p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFFFFF;
-    text-align: center;
-  }
   .bis {
     height: 0px;
     width: 0px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1023px) {
+  .achievement-section h1 {
+    width: 65.24%;
+    border-radius: 25px;
+  }
+  .achievement-section .all-cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .achievement-section .card {
+    width: 45%;
+    flex-direction: column;
+  }
+  .achievement-section .card img {
+    width: 84%;
+    height: 60%;
+  }
+  .achievement-section .card .information {
+    width: 100%;
+    height: 40%;
+    transform: translateY(-5px);
+  }
+  .achievement-section .card .information .border {
+    justify-content: space-between;
+    padding-bottom: 20px;
+    height: 70% !important;
+    width: 92% !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .achievement-section {
+    height: 1100px;
+  }
+  .achievement-section h1 {
+    width: 60%;
+    border-radius: 25px;
+  }
+  .achievement-section .all-cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .achievement-section .all-cards .card {
+    width: 27%;
+    flex-direction: column;
+  }
+  .achievement-section .all-cards .card img {
+    width: 80%;
+    height: 60%;
+  }
+  .achievement-section .all-cards .card .information {
+    height: 40%;
+    width: 100%;
+    transform: translateY(-40px);
+  }
+  .achievement-section .all-cards .card .information .border {
+    height: 70% !important;
+    padding-bottom: 20px;
   }
 }
 
