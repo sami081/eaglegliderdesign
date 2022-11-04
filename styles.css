@@ -788,6 +788,7 @@ footer .law a {
   .achievement-section h1 {
     width: 65.24%;
     border-radius: 25px;
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.5098039216);
   }
   .achievement-section .all-cards {
     flex-wrap: wrap;
@@ -820,6 +821,7 @@ footer .law a {
   .achievement-section h1 {
     width: 60%;
     border-radius: 25px;
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.5098039216);
   }
   .achievement-section .all-cards {
     flex-wrap: wrap;
@@ -841,6 +843,286 @@ footer .law a {
   .achievement-section .all-cards .card .information .border {
     height: 70% !important;
     padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .services-section .all-cards .card-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .services-section .all-cards .card-one {
+    height: 850px;
+  }
+  .services-section .all-cards .card-one .one {
+    background-image: url("./img/background/website.png");
+    object-fit: cover;
+    height: 240px;
+    background-size: auto;
+  }
+  .services-section .all-cards .card-one .one background-repeat:no-repeat p {
+    width: 55%;
+  }
+  .services-section .all-cards .card-one .two {
+    background-image: url("./img/background/charte.png");
+    object-fit: cover;
+    height: 242px;
+    background-repeat: no-repeat;
+  }
+  .services-section .all-cards .card-one .two p {
+    width: 35%;
+  }
+  .services-section .all-cards .card-one .three {
+    background-image: url("./img/background/strategie.png");
+    object-fit: cover;
+    height: 286px;
+  }
+  .services-section .all-cards .card-one .three p {
+    width: 55%;
+  }
+  .services-section .all-cards .card-two {
+    height: 1200px;
+  }
+  .services-section .all-cards .card-two .four {
+    background-image: url("./img/background/print.png");
+    object-fit: cover;
+    height: 635px;
+  }
+  .services-section .all-cards .card-two .four ul {
+    width: 30%;
+    padding-left: 30px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .services-section .all-cards .card-two .four ul li {
+    list-style-type: disc;
+    line-height: 25px;
+    color: black;
+  }
+  .services-section .all-cards .card-two .five {
+    background-image: url("./img/background/logo.png");
+    object-fit: cover;
+    height: 458px;
+  }
+  .services-section .all-cards .card-two .five p {
+    width: 35%;
+  }
+  .services-section .all-cards .six {
+    background-image: url("./img/background/digitale.png");
+    object-fit: cover;
+    height: 402px;
+  }
+  .services-section .all-cards .six ul {
+    width: 30%;
+    padding-left: 30px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .services-section .all-cards .six ul li {
+    list-style-type: disc;
+    color: black;
+    line-height: 25px;
+  }
+  .services-section .all-cards .card {
+    width: 93.6%;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .services-section .all-cards .card h2 {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 22px;
+    text-shadow: rgba(0, 0, 0, 0.6509803922) 2px 3px 6px;
+  }
+  .services-section .all-cards .card p {
+    margin-top: 10px;
+    padding-left: 15px;
+    color: black;
+    font-weight: bolder;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .services-section {
+    height: 2400px;
+  }
+  .services-section .card {
+    border-radius: 2em;
+    padding: 0 !important;
+  }
+  .services-section .all-cards {
+    height: 2000px;
+    align-content: space-around;
+    width: 79.51%;
+  }
+  .services-section .groupe-one {
+    height: 1432px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .services-section .groupe-one .card-one {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .services-section .groupe-one .card-one .one {
+    background-image: url("./img/background/website-dekstop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 393px;
+    align-items: flex-start;
+  }
+  .services-section .groupe-one .card-one .one h2 {
+    width: 46.24%;
+    margin-top: 25px;
+    margin-left: 16px;
+    font-size: 2em;
+    text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.6509803922);
+  }
+  .services-section .groupe-one .card-one .one p {
+    margin-top: 10px;
+    margin-left: 16px;
+    color: black;
+    width: 33.65%;
+    font-size: 1.3em;
+  }
+  .services-section .groupe-one .card-one .two {
+    background-image: url("./img/background/charte-dekstop.png");
+    background-size: contain;
+    order: 3;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 367px;
+    align-items: flex-start;
+  }
+  .services-section .groupe-one .card-one .two h2 {
+    text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.6509803922);
+    margin-top: 30px;
+    margin-left: 25px;
+    font-size: 2em;
+    width: 37.51%;
+  }
+  .services-section .groupe-one .card-one .two p {
+    width: 35%;
+    font-size: 1.3em;
+    color: #000;
+    margin-left: 25px;
+    margin-top: 55px;
+    width: 24.8%;
+  }
+  .services-section .groupe-one .card-one .three {
+    text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.6509803922);
+    order: 2;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 505px;
+    align-items: flex-start;
+    background-image: url("./img/background/strategie-dekstop.png");
+    background-size: contain;
+  }
+  .services-section .groupe-one .card-one .three h2 {
+    margin-top: 45px;
+    margin-left: 16px;
+    width: 59.85%;
+    font-size: 2em;
+  }
+  .services-section .groupe-one .card-one .three p {
+    margin-top: 50px;
+    margin-left: 16px;
+    width: 32.5%;
+    color: #000;
+    font-size: 1.3em;
+    width: 32.5%;
+  }
+  .services-section .groupe-one .card-two {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .services-section .groupe-one .card-two .four {
+    width: 100%;
+    align-items: flex-start;
+    height: 687px;
+    background-image: url("./img/background/print-dekstop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .services-section .groupe-one .card-two .four h2 {
+    text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.6509803922);
+    margin-top: 30px;
+    margin-left: 26px;
+    font-size: 2em;
+    width: 71.779%;
+  }
+  .services-section .groupe-one .card-two .four ul {
+    margin-top: 80px;
+    margin-left: 40px;
+    width: 32.38%;
+  }
+  .services-section .groupe-one .card-two .four ul li {
+    list-style-type: disc;
+    color: #000;
+    font-size: 1.3em;
+    line-height: 25px;
+  }
+  .services-section .groupe-one .card-two .five {
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 703px;
+    background-image: url("./img/background/logo-dekstop.png");
+    background-size: cover;
+    align-items: flex-start;
+  }
+  .services-section .groupe-one .card-two .five h2 {
+    text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.6509803922);
+    margin-top: 50px;
+    margin-left: 26px;
+    font-size: 2em;
+    width: 51.31%;
+  }
+  .services-section .groupe-one .card-two .five p {
+    font-size: 1.3em;
+    color: #000;
+    margin-left: 26px;
+    margin-top: 50px;
+    width: 35.25%;
+  }
+  .services-section .six {
+    background-image: url("./img/background/digitale-dekstop.png");
+    background-repeat: no-repeat;
+    width: 100% !important;
+    background-size: cover;
+    height: 325px;
+    align-items: flex-start;
+  }
+  .services-section .six h2 {
+    text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.6509803922);
+    width: 33.99%;
+    margin-top: 25px;
+    margin-left: 44px;
+    font-size: 2em;
+  }
+  .services-section .six ul {
+    margin-top: 22px;
+    margin-left: 60px;
+  }
+  .services-section .six ul li {
+    color: #000;
+    list-style-type: disc;
+    font-size: 1.3em;
   }
 }
 
