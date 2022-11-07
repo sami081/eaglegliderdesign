@@ -1391,6 +1391,9 @@ footer .law a {
   }
 }
 @media screen and (min-width: 1024px) {
+  .contact-section {
+    height: 800px !important;
+  }
   .contact-section form {
     justify-content: space-around;
     align-content: space-around;
@@ -1401,9 +1404,10 @@ footer .law a {
     order: 0;
   }
   .contact-section form .bloc2 {
+    transform: translateX(-5%);
     height: 150px !important;
     order: 3;
-    width: 57%;
+    width: 60%;
     flex-direction: row !important;
     justify-content: start !important;
     align-items: center;
@@ -1415,11 +1419,11 @@ footer .law a {
     justify-content: space-between;
   }
   .contact-section form .bloc2 .div-form input {
-    width: 75.1% !important;
+    width: 77.722% !important;
   }
   .contact-section form .bloc2 .div-form label {
-    width: 24.9% !important;
-    font-size: 28px;
+    margin-left: 35px !important;
+    width: 20% !important;
   }
   .contact-section form .bloc3 {
     order: 1;
@@ -1430,6 +1434,7 @@ footer .law a {
     width: 25.916%;
   }
   .contact-section form button {
+    transform: translateY(45px);
     order: 4;
     width: 18.45%;
     height: 50px;

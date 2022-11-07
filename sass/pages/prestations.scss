@@ -85,6 +85,7 @@
 
 @media screen and (min-width: 1024px) {
   .contact-section {
+    height: 800px !important;
     form {
       justify-content: space-around;
       align-content: space-around;
@@ -95,9 +96,10 @@
         order: 0;
       }
       .bloc2 {
+        transform: translateX(-5%);
         height: 150px !important;
         order: 3;
-        width: 57%;
+        width: 60%;
         flex-direction: row !important;
         justify-content: start !important;
         align-items: center;
@@ -108,12 +110,12 @@
           width: 100% !important;
           justify-content: space-between;
           input {
-            width: 75.1% !important;
+            width: 77.722% !important;
           }
           label{
-            // margin-left: 45px!important;
-            width: 24.9% !important;
-            font-size: 28px;
+             margin-left: 35px!important;
+            width: 20% !important;
+            
           }
         }
       }
@@ -126,6 +128,7 @@
         width: 25.916%;
       }
       button {
+        transform: translateY(45px);
         order: 4;
         width: 18.45% ;
         height: 50px;
