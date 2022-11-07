@@ -845,23 +845,57 @@ footer .law a {
     padding-bottom: 20px;
   }
 }
-@media screen and (max-width: 499px) {
+.services-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.services-section .all-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.services-section .groupe-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.services-section .groupe-one .card-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .services-section {
+    height: auto;
+  }
+  .services-section div {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .services-section .all-cards {
+    height: 2800px;
+    flex-wrap: nowrap;
+  }
   .services-section .all-cards .card-block {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  }
+  .services-section .all-cards .groupe-one {
+    height: auto;
   }
   .services-section .all-cards .card-one {
-    height: 850px;
+    height: 1000px;
   }
   .services-section .all-cards .card-one .one {
     background-image: url("./img/background/website.png");
     object-fit: cover;
     height: 240px;
-    background-size: auto;
   }
-  .services-section .all-cards .card-one .one background-repeat:no-repeat p {
+  .services-section .all-cards .card-one .one p {
     width: 55%;
   }
   .services-section .all-cards .card-one .two {
@@ -882,7 +916,7 @@ footer .law a {
     width: 55%;
   }
   .services-section .all-cards .card-two {
-    height: 1200px;
+    height: 1300px;
   }
   .services-section .all-cards .card-two .four {
     background-image: url("./img/background/print.png");
@@ -951,6 +985,158 @@ footer .law a {
     font-weight: bolder;
   }
 }
+@media screen and (min-width: 501px) and (max-width: 1022px) {
+  .services-section {
+    height: 2100px;
+  }
+  .services-section .all-cards {
+    height: 1850px;
+    flex-wrap: nowrap;
+  }
+  .services-section .all-cards .card {
+    padding: 0 !important;
+  }
+  .services-section .all-cards .groupe-one {
+    height: 1650px;
+  }
+  .services-section .all-cards .groupe-one .card-one {
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+  .services-section .all-cards .groupe-one .card-one .one {
+    padding: 0;
+    width: 40%;
+    background-image: url("./img/background/website-dekstop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .services-section .all-cards .groupe-one .card-one .one h2 {
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .services-section .all-cards .groupe-one .card-one .one p {
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .services-section .all-cards .groupe-one .card-one .two {
+    width: 40%;
+    background-image: url("./img/background/charte-dekstop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    border-radius: 20px;
+    align-items: start;
+  }
+  .services-section .all-cards .groupe-one .card-one .two h2 {
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .services-section .all-cards .groupe-one .card-one .two p {
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 35%;
+  }
+  .services-section .all-cards .groupe-one .card-one .three {
+    width: 85%;
+    background-image: url("./img/background/strategie-dekstop.png");
+    background-size: cover;
+    height: 450px;
+    border-radius: 20px;
+    align-items: flex-start;
+  }
+  .services-section .all-cards .groupe-one .card-one .three h2 {
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+  .services-section .all-cards .groupe-one .card-one .three p {
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 65%;
+  }
+  .services-section .all-cards .groupe-one .card-two {
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .services-section .all-cards .groupe-one .card-two .four {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 40%;
+    background-image: url("./img/background/print.png");
+    background-size: cover;
+    border-radius: 20px;
+    align-items: start;
+  }
+  .services-section .all-cards .groupe-one .card-two .four h2 {
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .services-section .all-cards .groupe-one .card-two .four ul {
+    height: 80%;
+    margin-top: 30px;
+    margin-left: 25px;
+    width: 35%;
+  }
+  .services-section .all-cards .groupe-one .card-two .four ul li {
+    margin-top: 10px;
+    list-style-type: disc;
+    line-height: 25px;
+  }
+  .services-section .all-cards .groupe-one .card-two .five {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 40%;
+    background-image: url("./img/background/logo.png");
+    align-items: start;
+    border-radius: 20px;
+    background-size: cover;
+  }
+  .services-section .all-cards .groupe-one .card-two .five h2 {
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .services-section .all-cards .groupe-one .card-two .five p {
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 35%;
+  }
+  .services-section .all-cards .six {
+    background-image: url("./img/background/digitale-dekstop.png");
+    width: 75%;
+    background-size: cover;
+    height: 250px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .services-section .all-cards .six h2 {
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 70%;
+  }
+  .services-section .all-cards .six ul {
+    height: 80%;
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 35%;
+  }
+  .services-section .all-cards .six ul li {
+    margin-top: 10px;
+    list-style-type: disc;
+  }
+}
 @media screen and (min-width: 1023px) {
   .services-section {
     height: 2400px;
@@ -961,14 +1147,11 @@ footer .law a {
   }
   .services-section .all-cards {
     height: 2000px;
-    align-content: space-around;
     width: 79.51%;
   }
   .services-section .groupe-one {
     height: 1432px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
   }
   .services-section .groupe-one .card-one {
     width: 60%;

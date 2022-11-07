@@ -1,20 +1,53 @@
-@media screen and (max-width: 499px) {
+//all
+.services-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  .all-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .groupe-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .card-block{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
   .services-section {
+    div {
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    height: auto;
+
     .all-cards {
+      height: 2800px;
+      flex-wrap: nowrap;
       .card-block {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+      }
+      .groupe-one {
+        height: auto;
       }
       .card-one {
-        height: 850px;
+        height: 1000px;
         .one {
           background-image: url("./img/background/website.png");
           object-fit: cover;
           height: 240px;
-          background-size: auto;
-          background-repeat:no-repeat p {
+          p {
             width: 55%;
           }
         }
@@ -37,7 +70,7 @@
         }
       }
       .card-two {
-        height: 1200px;
+        height: 1300px;
 
         .four {
           background-image: url("./img/background/print.png");
@@ -113,6 +146,165 @@
   }
 }
 
+@media screen and (min-width: 501px) and (max-width: 1022px) {
+  .services-section {
+    height: 2100px;
+
+    .all-cards {
+      height: 1850px;
+      .card {
+        padding: 0 !important;
+      }
+
+      flex-wrap: nowrap;
+
+      // height: 1850px;
+
+      .groupe-one {
+        height: 1650px;
+        .card-one {
+          height: 800px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-content: space-around;
+          .one {
+            padding: 0;
+            width: 40%;
+            background-image: url("./img/background/website-dekstop.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 200px;
+            border-radius: 20px;
+            display: flex;
+            align-items: flex-start;
+
+            h2 {
+              margin-top: 10px;
+              margin-left: 15px;
+            }
+            p {
+              margin-top: 10px;
+              margin-left: 15px;
+            }
+          }
+          .two {
+            width: 40%;
+            background-image: url("./img/background/charte-dekstop.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            border-radius: 20px;
+            align-items: start;
+            h2 {
+              margin-top: 10px;
+              margin-left: 15px;
+            }
+            p {
+              margin-top: 10px;
+              margin-left: 15px;
+              width: 35%;
+            }
+          }
+          .three {
+            width: 85%;
+            background-image: url("./img/background/strategie-dekstop.png");
+            background-size: cover;
+            height: 450px;
+            border-radius: 20px;
+            align-items: flex-start;
+            h2 {
+              margin-top: 20px;
+              margin-left: 15px;
+            }
+            p {
+              margin-top: 20px;
+              margin-left: 15px;
+              width: 65%;
+            }
+          }
+        }
+        .card-two {
+          height: 600px;
+
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          .four {
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            width: 40%;
+            background-image: url("./img/background/print.png");
+            background-size: cover;
+            border-radius: 20px;
+            align-items: start;
+            h2 {
+              margin-top: 10px;
+              margin-left: 15px;
+            }
+            ul {
+              height: 80%;
+              margin-top: 30px;
+              margin-left: 25px;
+              width: 35%;
+              li {
+                margin-top: 10px;
+                list-style-type: disc;
+                line-height: 25px;
+              }
+            }
+          }
+          .five {
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            width: 40%;
+            background-image: url("./img/background/logo.png");
+            align-items: start;
+            border-radius: 20px;
+            background-size: cover;
+            h2 {
+              margin-top: 10px;
+              margin-left: 15px;
+            }
+            p {
+              margin-top: 10px;
+              margin-left: 15px;
+              width: 35%;
+            }
+          }
+        }
+      }
+      .six {
+        background-image: url("./img/background/digitale-dekstop.png");
+        width: 75%;
+        background-size: cover;
+        height: 250px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        h2 {
+          margin-top: 10px;
+          margin-left: 15px;
+          width: 70%;
+        }
+        ul {
+          height: 80%;
+          margin-top: 20px;
+          margin-left: 25px;
+          width: 35%;
+          li {
+            margin-top: 10px;
+            list-style-type: disc;
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (min-width: 1023px) {
   .services-section {
     height: 2400px;
@@ -122,19 +314,13 @@
     }
     .all-cards {
       height: 2000px;
-      align-content: space-around;
       width: 79.51%;
     }
     .groupe-one {
       height: 1432px;
       width: 100%;
-
-      display: flex;
-      justify-content: space-between;
-
       .card-one {
         width: 60%;
-
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -150,7 +336,7 @@
             margin-top: 25px;
             margin-left: 16px;
             font-size: 2em;
-            text-shadow: 2px 3px 6px #000000A6;
+            text-shadow: 2px 3px 6px #000000a6;
           }
           p {
             margin-top: 10px;
@@ -169,7 +355,7 @@
           height: 367px;
           align-items: flex-start;
           h2 {
-            text-shadow: 2px 3px 6px #000000A6;
+            text-shadow: 2px 3px 6px #000000a6;
             margin-top: 30px;
             margin-left: 25px;
             font-size: 2em;
@@ -185,7 +371,7 @@
           }
         }
         .three {
-          text-shadow: 2px 3px 6px #000000A6;
+          text-shadow: 2px 3px 6px #000000a6;
           order: 2;
           width: 100%;
           background-repeat: no-repeat;
@@ -222,8 +408,8 @@
           background-image: url("./img/background/print-dekstop.png");
           background-repeat: no-repeat;
           background-size: cover;
-          h2{
-            text-shadow: 2px 3px 6px #000000A6;
+          h2 {
+            text-shadow: 2px 3px 6px #000000a6;
             margin-top: 30px;
             margin-left: 26px;
             font-size: 2em;
@@ -233,7 +419,7 @@
             margin-top: 80px;
             margin-left: 40px;
             width: 32.38%;
-            li{
+            li {
               list-style-type: disc;
               color: #000;
               font-size: 1.3em;
@@ -248,14 +434,14 @@
           background-image: url("./img/background/logo-dekstop.png");
           background-size: cover;
           align-items: flex-start;
-          h2{
-            text-shadow: 2px 3px 6px #000000A6;
+          h2 {
+            text-shadow: 2px 3px 6px #000000a6;
             margin-top: 50px;
             margin-left: 26px;
             font-size: 2em;
             width: 51.31%;
           }
-          p{
+          p {
             font-size: 1.3em;
             color: #000;
             margin-left: 26px;
@@ -272,18 +458,17 @@
       background-size: cover;
       height: 325px;
       align-items: flex-start;
-      h2{
-        text-shadow: 2px 3px 6px #000000A6;
+      h2 {
+        text-shadow: 2px 3px 6px #000000a6;
         width: 33.99%;
         margin-top: 25px;
         margin-left: 44px;
         font-size: 2em;
-        
       }
       ul {
         margin-top: 22px;
         margin-left: 60px;
-        li{
+        li {
           color: #000;
           list-style-type: disc;
           font-size: 1.3em;
