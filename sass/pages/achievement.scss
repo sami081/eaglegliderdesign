@@ -15,6 +15,7 @@
     height: 70px;
     justify-content: center;
     align-items: center;
+    box-shadow: inset 3px 3px 6px #00000082;
 
     background: linear-gradient(#f0850b, #ea5d11);
 
@@ -125,8 +126,7 @@ width: 100%;
     h1{
       width: 65.24%;
       border-radius: 25px;
-      box-shadow: inset 3px 3px 6px #00000082;
-
+    
     }
     .all-cards{
 flex-wrap: wrap;
