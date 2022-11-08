@@ -314,9 +314,10 @@
     }
     .all-cards {
       height: 2000px;
-      width: 79.51%;
+      width: 100%;
     }
     .groupe-one {
+      flex-wrap: wrap;
       height: 1432px;
       width: 100%;
       .card-one {
