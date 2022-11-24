@@ -56,7 +56,8 @@
 }
 .size-h1 {
   color: black;
-  width: 65%;
+  width: 82.053%;
+  font-size: 48px !important;
 }
 
 .bold {
@@ -185,15 +186,23 @@ header {
   header .menu-dekstop ul li a {
     color: #D8D9D9;
   }
+  header .menu-dekstop ul li a:hover {
+    color: white;
+  }
 }
 .banner {
   background-image: url("./img/background/background-image.png");
   background-size: cover;
   display: flex;
 }
+.banner p {
+  font-family: "Viga-regular";
+  font-weight: lighter;
+}
 .banner a {
   margin-top: 35px;
-  font-weight: bolder;
+  font-weight: lighter;
+  font-family: "Viga-regular";
   background: #f1e102;
   color: #000000;
   font-size: 28px;
@@ -201,12 +210,15 @@ header {
   height: 45px;
   border-radius: 10px;
   display: flex;
-  justify-content: center;
   align-items: center;
   box-shadow: 3px 3px 6px;
 }
 .banner .div-menu {
   display: none;
+}
+.banner h1 {
+  font-family: "Viga-regular";
+  font-weight: lighter;
 }
 
 @media screen and (max-width: 499px) {
@@ -254,7 +266,6 @@ header {
     margin-left: 32px;
     font-size: 22px;
     color: transparent;
-    font-weight: bold;
     transition: all 1.8s;
   }
   .banner .div-title {
@@ -273,11 +284,13 @@ header {
   .banner .div-title h1 {
     text-align: center;
     font-size: 3em;
+    font-family: "Viga-regular";
+    color: #D8D9D9;
   }
   .banner .div-title p {
     margin-top: 10px;
-    font-size: 22px;
-    width: 65%;
+    font-size: 22px !important;
+    width: 59.5%;
     text-align: center;
   }
   .banner .div-title a {
@@ -335,8 +348,10 @@ header {
   padding: 20px 0;
 }
 .about h2 {
+  font-family: "Viga-regular";
   margin: 20px 0;
   color: #ea5d11;
+  font-weight: lighter;
 }
 .about .card {
   padding: 20px 0;
@@ -355,12 +370,15 @@ header {
   width: 95%;
 }
 .about .information .border h3 {
-  border-bottom: #F0850B solid 2px;
+  border-bottom: #f0850b solid 2px;
   line-height: 60px;
+  font-family: "Montserrat-bold";
+  color: #ea5d11;
 }
 .about .information .border p {
   overflow: auto;
   margin-bottom: 15px;
+  font-family: "Montserrat-regular";
 }
 .about .picture {
   border-radius: 15px;
@@ -372,15 +390,15 @@ header {
   justify-content: center;
 }
 .about aside p {
-  text-align: justify;
   width: 100%;
-  color: #EA5D11;
+  color: #ea5d11;
   font-size: 22px;
-  padding: 10px 10px;
+  font-family: "Viga-regular";
+  font-weight: lighter;
 }
 
 .separation {
-  background: linear-gradient(#F2B704, #F0850B);
+  background: linear-gradient(#f2b704, #f0850b);
   width: 100%;
   height: 32px;
   margin-top: 20px;
@@ -403,7 +421,7 @@ header {
   }
   .about .card .youssouf {
     width: 88.205%;
-    height: 550px;
+    height: 647px;
   }
   .about .card .youssouf .border-youssouf {
     width: 91%;
@@ -411,7 +429,7 @@ header {
   }
   .about .card .sami {
     width: 88.205%;
-    height: 600px;
+    height: 715px;
   }
   .about .card .sami .border-sami {
     width: 91%;
@@ -427,15 +445,23 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
   }
   .about .card .information .border h3 {
+    margin-left: 50px;
     color: #ea5d11;
     font-size: 28px;
   }
   .about .card .information .border p {
-    width: 80%;
+    margin-left: 40px;
+    width: 66.77%;
+    text-align: left;
+    font-size: 22px;
+  }
+  .about aside p {
+    width: 71.154%;
+    text-align: center;
   }
 }
 @media screen and (min-width: 500px) {
@@ -543,6 +569,7 @@ header {
 footer {
   padding: 0 30px;
   display: flex;
+  font-family: "Montserrat-bold";
   background: #2E2E2E;
   border: solid 1px #707070;
 }
@@ -670,18 +697,102 @@ footer .law a {
 .processus-section {
   display: flex;
   flex-direction: column;
-  background: #e8e8e8 !important;
+  background: #E8E8E8 !important;
   justify-content: space-between;
 }
 .processus-section h1 {
+  font-family: "Viga-regular";
   margin-top: 100px;
   display: flex;
-  height: 70px;
+  height: 80px;
   justify-content: center;
   align-items: center;
   background: linear-gradient(#f0850b, #ea5d11);
+  box-shadow: inset rgba(0, 0, 0, 0.5098039216) 3px 3px 6px;
 }
 
+@media screen and (max-width: 500px) {
+  .processus-section h1 {
+    width: 100%;
+  }
+  .processus-section .processus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 25px;
+  }
+  .processus-section .processus .path {
+    background-image: url("./img/picture/Chemin-bas.png");
+    width: 36px;
+    height: 85px;
+    background-size: contain;
+  }
+  .processus-section .processus .bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    height: 578px;
+  }
+  .processus-section .processus .bloc .bloc-a {
+    background-image: url("./img/picture/bloc-a4.png");
+    height: 509px;
+    width: 78.464%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.568627451);
+    border-radius: 35px;
+    background-size: cover;
+    border: red;
+  }
+  .processus-section .processus .bloc .bloc-a h3 {
+    margin-top: 95px;
+    font-size: 34px;
+    font-weight: bolder;
+  }
+  .processus-section .processus .bloc .bloc-a .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 45%;
+    bottom: auto;
+  }
+  .processus-section .processus .bloc .bloc-a .information h3 {
+    margin-top: 0;
+    color: #f0850b;
+    width: 74.51%;
+    text-align: center;
+    font-size: 22px;
+  }
+  .processus-section .processus .bloc .bloc-a .information p {
+    width: 74.51%;
+    color: #D8D9D9;
+    font-size: 18px;
+    text-align: center;
+  }
+  .processus-section .processus .bloc .bloc-a .information .icon-bloc {
+    width: 70px;
+    height: 70px;
+  }
+  .processus-section .processus .bloc .bloc-b {
+    background-image: url("../../img/picture/Chemin-bas.png");
+    width: 36px;
+    height: 85px;
+    background-size: contain;
+  }
+}
+@media screen and (min-width: 500px) {
+  .processus-section h1 {
+    width: 36.677%;
+    border-radius: 1em;
+  }
+}
 .bis {
   height: 0px;
   width: 0px;
@@ -1465,6 +1576,18 @@ footer .law a {
     width: 100%;
     height: 50px;
   }
+}
+@font-face {
+  font-family: Montserrat-regular;
+  src: url("./font-family/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: Viga-regular;
+  src: url("./font-family/Viga-Regular.ttf");
+}
+@font-face {
+  font-family: Montserrat-bold;
+  src: url("./font-family/Montserrat-Bold.ttf");
 }
 
 /*# sourceMappingURL=styles.css.map */

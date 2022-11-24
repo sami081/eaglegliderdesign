@@ -1,15 +1,106 @@
 .processus-section {
+  
   display: flex;
   flex-direction: column;
-  background: #e8e8e8 !important;
+  background: #E8E8E8 !important;
   justify-content: space-between;
   h1 {
+    font-family: "Viga-regular";
     margin-top: 100px;
     display: flex;
-    height: 70px;
+    height: 80px;
     justify-content: center;
     align-items: center;
 
     background: linear-gradient(#f0850b, #ea5d11);
+
+    box-shadow: inset #00000082 3px 3px 6px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .processus-section {
+    h1 {
+      width: 100%;
+    }
+    .processus {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      justify-content: space-around;
+      // height: 1693px;
+      margin-top: 25px;
+      .path {
+        background-image: url("./img/picture/Chemin-bas.png");
+        width: 36px;
+        height: 85px;
+        background-size: contain;
+      }
+      .bloc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        height: 578px;
+        .bloc-a {
+          background-image: url("./img/picture/bloc-a4.png");
+          height: 509px;
+          width: 78.464%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+      box-shadow: 10px 10px 6px #00000091;
+      border-radius: 35px;
+      background-size: cover;
+      border: red;
+          h3{
+            margin-top: 95px;
+            font-size: 34px;
+            font-weight: bolder;
+          }
+          .information{
+            display: flex;
+            flex-direction: column;
+           align-items: center;
+           justify-content: space-around;
+            height: 45%;
+            bottom:auto;
+           h3{
+            margin-top: 0;
+            color: #f0850b;
+            width: 74.51%;
+            text-align: center;
+            font-size: 22px;
+           }
+           p{
+            width: 74.51%;
+            color: #D8D9D9;
+            font-size: 18px;
+            text-align: center;
+           }
+           .icon-bloc{
+            width: 70px;
+            height: 70px;
+           }
+          }
+        }
+        .bloc-b{
+          background-image: url("../../img/picture/Chemin-bas.png");
+          width: 36px;
+          height: 85px;
+          background-size: contain;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 500px) {
+  .processus-section {
+    h1 {
+      width: 36.677%;
+      border-radius: 1em;
+    }
   }
 }
