@@ -61,11 +61,7 @@
 }
 
 .bold {
-  padding: 5px;
-  border: 2px solid #F0850B;
-  border-radius: 0.3em;
   color: #F1E102 !important;
-  line-height: 40.5px;
 }
 
 .processus-section {
@@ -143,7 +139,7 @@ header {
   header .bloc-contact #menu ul {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   header .bloc-contact #menu ul li {
     width: 25px;
@@ -182,11 +178,23 @@ header {
     height: 100%;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
   header .menu-dekstop ul li a {
     color: #D8D9D9;
   }
-  header .menu-dekstop ul li a:hover {
+  header .menu-dekstop ul li .trait {
+    transform: translateY(249%);
+    width: 100%;
+    height: 10px;
+    border-radius: 50px;
+    background: linear-gradient(#F2B704, #f0850b);
+  }
+  header .menu-dekstop ul li .off {
+    width: 0%;
+  }
+  header .menu-dekstop ul li .th a:hover {
     color: white;
   }
 }
@@ -285,7 +293,7 @@ header {
     text-align: center;
     font-size: 3em;
     font-family: "Viga-regular";
-    color: #D8D9D9;
+    color: #d8d9d9;
   }
   .banner .div-title p {
     margin-top: 10px;
@@ -331,14 +339,20 @@ header {
   .banner .div-title {
     width: 40%;
     color: #000000;
-    height: 50%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     margin-left: 20px;
   }
   .banner .div-title a {
+    margin: 0;
     width: 8.5em !important;
+    display: flex;
+    justify-content: center;
+  }
+  .banner .div-title a:hover {
+    border: white 4px solid;
   }
 }
 .about {
@@ -709,7 +723,10 @@ footer .law a {
   box-shadow: inset rgba(0, 0, 0, 0.5098039216) 3px 3px 6px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 999px) {
+  .processus-section {
+    height: 3500px !important;
+  }
   .processus-section h1 {
     width: 100%;
     margin-top: 100px;
@@ -739,12 +756,26 @@ footer .law a {
   .processus-section .processus .bloc .bloc1 {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 70%;
     align-items: center;
     justify-content: space-around;
+    order: 2;
+  }
+  .processus-section .processus .bloc .bloc2 {
+    transform: translateY(-1px);
+    display: flex;
+    order: 1;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./img/picture/top3.png");
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
   }
   .processus-section .processus .bloc .bloc-a {
-    background-image: url("./img/picture/bloc-a4.png");
+    background: black !important;
     height: 509px;
     width: 78.464%;
     display: flex;
@@ -752,9 +783,9 @@ footer .law a {
     align-items: center;
     justify-content: space-between;
     box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.568627451);
-    border-radius: 35px;
+    border-radius: 30px;
     background-size: cover;
-    border: red;
+    max-width: 315px;
   }
   .processus-section .processus .bloc .bloc-a h3 {
     font-size: 34px;
@@ -765,18 +796,18 @@ footer .law a {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 45%;
-    bottom: auto;
+    height: 100%;
   }
-  .processus-section .processus .bloc .bloc-a .information h3 {
+  .processus-section .processus .bloc .bloc-a .information .text {
+    width: 74.51%;
+  }
+  .processus-section .processus .bloc .bloc-a .information .text h3 {
     margin-top: 0;
     color: #f0850b;
-    width: 74.51%;
     text-align: center;
     font-size: 22px;
   }
-  .processus-section .processus .bloc .bloc-a .information p {
-    width: 74.51%;
+  .processus-section .processus .bloc .bloc-a .information .text p {
     color: #d8d9d9;
     font-size: 18px;
     text-align: center;
@@ -786,13 +817,17 @@ footer .law a {
     height: 70px;
   }
   .processus-section .processus .bloc .bloc-b {
-    background-image: url("../../img/picture/Chemin-bas.png");
+    background-image: url("./img/picture/Chemin-bas.png");
     width: 36px;
     height: 85px;
     background-size: contain;
   }
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 1000px) {
+  .processus-section {
+    height: 2150px !important;
+    justify-content: center !important;
+  }
   .processus-section h1 {
     width: 36.677%;
     border-radius: 1em;
@@ -801,15 +836,16 @@ footer .law a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 1500px;
+    height: 1700px;
     align-items: center;
     width: 100%;
   }
   .processus-section .processus .path {
-    background-image: url("./img/picture/Chemin-bas.png");
-    width: 75px;
-    height: 200px;
-    background-size: cover;
+    background-image: url("./img/picture/haut.png");
+    width: 3.5875%;
+    height: 95px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .processus-section .processus .pro1 {
     justify-content: right;
@@ -825,42 +861,147 @@ footer .law a {
   .processus-section .processus .bloc .one {
     order: 2;
   }
+  .processus-section .processus .bloc .one .information {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .processus-section .processus .bloc .one .information img {
+    height: 80px;
+    width: 80px;
+  }
+  .processus-section .processus .bloc .one .information .text {
+    order: 2;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+    justify-content: center;
+  }
+  .processus-section .processus .bloc .one .information .text h3 {
+    font-family: "Montserrat-bold";
+    text-align: right;
+    font-size: 22px;
+    color: #f0850b;
+    margin-bottom: 8px;
+  }
+  .processus-section .processus .bloc .one .information .text p {
+    margin-top: 9px;
+    font-family: "Montserrat-regular";
+    width: 100%;
+    text-align: right;
+    font-size: 16px;
+  }
+  .processus-section .processus .bloc .bottom {
+    background-image: url("../../img/picture/fin.png");
+    display: flex;
+    transform: translate(15%, 45%) !important;
+    height: 350px !important;
+  }
   .processus-section .processus .bloc .left {
-    background-image: url("../../img/picture/gauche.png");
+    background-image: url("./img/picture/gauche.png");
   }
   .processus-section .processus .bloc .two {
     order: 1;
   }
+  .processus-section .processus .bloc .two .bloc1 {
+    order: 2;
+    width: 60%;
+  }
+  .processus-section .processus .bloc .two .bloc1 .information {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  .processus-section .processus .bloc .two .bloc1 .information img {
+    margin-right: 8%;
+    order: 2;
+    height: 80px;
+    width: 80px;
+  }
+  .processus-section .processus .bloc .two .bloc1 .information .text {
+    margin-left: 8%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+  .processus-section .processus .bloc .two .bloc1 .information .text h3 {
+    width: 50%;
+    font-family: "Montserrat-bold";
+    color: #F0850B;
+    font-size: 22px;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  .processus-section .processus .bloc .two .bloc1 .information .text p {
+    margin-top: 9px;
+    font-family: "Montserrat-regular";
+    font-size: 16px;
+    text-align: left;
+    width: 85%;
+  }
+  .processus-section .processus .bloc .two .bloc2 {
+    order: 1;
+    background-image: url("./img/picture/bloc-droit.png") !important;
+    transform: translate(-1px, -1px) !important;
+  }
+  .processus-section .processus .bloc .two .bloc2 h3 {
+    text-align: center !important;
+  }
   .processus-section .processus .bloc .right {
-    background-image: url("../../img/picture/right.png");
+    background-image: url("./img/picture/right.png");
   }
   .processus-section .processus .bloc .bloc-a {
+    height: 185px;
     border: none;
     background: black;
     display: flex;
-    width: 48.902%;
+    width: 54.336%;
     border-radius: 22px;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 195px;
     box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.568627451);
   }
   .processus-section .processus .bloc .bloc-a .bloc1 {
     width: 65%;
+    display: flex;
+    align-items: center;
   }
   .processus-section .processus .bloc .bloc-a .bloc2 {
-    background-image: url("../../img/picture/fleche-droite2.png");
+    background-image: url("./img/picture/fleche-droite2.png");
     width: 35%;
-    height: 100%;
+    height: 101%;
     border-radius: 18px;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    transform: translate(1px, -1px);
+  }
+  .processus-section .processus .bloc .bloc-a .bloc2 h3 {
+    font-size: 4em;
+    width: 72%;
+    text-align: right;
   }
   .processus-section .processus .bloc .bloc-b {
-    width: 12%;
+    transform: translateY(25%);
+    width: 26%;
     background-repeat: no-repeat;
-    height: 45%;
+    background-size: contain;
+    height: 220px;
     display: flex;
     justify-items: center;
+  }
+  .processus-section .processus .bloc .right {
+    margin-left: 5%;
+  }
+  .processus-section .processus .bloc .left {
+    margin-right: 5%;
   }
 }
 .bis {

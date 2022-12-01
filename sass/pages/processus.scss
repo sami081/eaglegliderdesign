@@ -16,8 +16,9 @@
     box-shadow: inset #00000082 3px 3px 6px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 999px) {
   .processus-section {
+    height: 3500px !important;
     h1 {
       width: 100%;
       margin-top: 100px;
@@ -37,21 +38,40 @@
         background-size: contain;
       }
       .bloc {
+        
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
         justify-content: space-around;
         height: 638px;
+       
         .bloc1 {
           display: flex;
           flex-direction: column;
-          height: 100%;
+          height: 70%;
           align-items: center;
           justify-content: space-around;
+          order: 2;
+        }
+        .bloc2 {
+          transform: translateY(-1px);
+          display: flex;
+          order: 1;
+          height: 50%;
+          // width: 100%;
+          align-items: center;
+          justify-content: center;
+          //flex-wrap: wrap;
+          background-image: url("./img/picture/top3.png");
+          width: 100%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          // border-top: #F0850B solid 1px
+          border-radius: 20px;
         }
         .bloc-a {
-          background-image: url("./img/picture/bloc-a4.png");
+          background: black !important;
           height: 509px;
           width: 78.464%;
           display: flex;
@@ -59,11 +79,11 @@
           align-items: center;
           justify-content: space-between;
           box-shadow: 10px 10px 6px #00000091;
-          border-radius: 35px;
+          border-radius: 30px;
           background-size: cover;
-          border: red;
+
+          max-width: 315px;
           h3 {
-            
             font-size: 34px;
             font-weight: bolder;
           }
@@ -72,20 +92,21 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
-            height: 45%;
-            bottom: auto;
-            h3 {
-              margin-top: 0;
-              color: #f0850b;
+            height: 100%;
+            .text {
               width: 74.51%;
-              text-align: center;
-              font-size: 22px;
-            }
-            p {
-              width: 74.51%;
-              color: #d8d9d9;
-              font-size: 18px;
-              text-align: center;
+              h3 {
+                margin-top: 0;
+                color: #f0850b;
+
+                text-align: center;
+                font-size: 22px;
+              }
+              p {
+                color: #d8d9d9;
+                font-size: 18px;
+                text-align: center;
+              }
             }
             .icon-bloc {
               width: 70px;
@@ -94,7 +115,7 @@
           }
         }
         .bloc-b {
-          background-image: url("../../img/picture/Chemin-bas.png");
+          background-image: url("./img/picture/Chemin-bas.png");
           width: 36px;
           height: 85px;
           background-size: contain;
@@ -103,8 +124,10 @@
     }
   }
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 1000px) {
   .processus-section {
+    height: 2150px !important;
+    justify-content: center !important;
     h1 {
       width: 36.677%;
       border-radius: 1em;
@@ -113,67 +136,184 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      height: 1500px;
+      height: 1700px;
       align-items: center;
       width: 100%;
       .path {
-        background-image: url("./img/picture/Chemin-bas.png");
-        width: 75px;
-        height: 200px;
-        background-size: cover;
+        background-image: url("./img/picture/haut.png");
+        width: 3.5875%;
+        height: 95px;
+        background-size: contain;
+        background-repeat: no-repeat;
       }
-      .pro1{
+      .pro1 {
         justify-content: right;
       }
-      .pro2{
+      .pro2 {
         justify-content: left;
       }
       .bloc {
-        .one{
+        .one {
           order: 2;
+
+          .information {
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            //flex-direction: column;
+            img {
+              height: 80px;
+              width: 80px;
+            }
+            .text {
+              order: 2;
+              width: 70%;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+              height: 100%;
+              justify-content: center;
+
+              h3 {
+               font-family: "Montserrat-bold";
+                text-align: right;
+                font-size: 22px;
+                color: #f0850b;
+                margin-bottom: 8px;
+              }
+              p {
+                margin-top: 9px;
+                font-family: "Montserrat-regular";
+                width: 100%;
+                text-align: right;
+                font-size: 16px;
+              }
+            }
+          }
         }
-        .left{
-          background-image: url("../../img/picture/gauche.png")
+        .bottom{
+          background-image: url("../../img/picture/fin.png");
+          //background-size: cover !important;
+          display: flex;
+      transform: translate(15% , 45%) !important;
+       height: 350px !important;
+        }
+
+        .left {
+          background-image: url("./img/picture/gauche.png");
         }
         .two {
           order: 1;
+          .bloc1{
+            order: 2;
+            width: 60%;
+            .information{
+              align-items: center;
+              display: flex;
+              justify-content: space-around;
+              img{
+                  margin-right: 8%;;
+                order: 2;
+                height: 80px;
+                width: 80px;
+              }
+              .text{
+                margin-left: 8%;
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                order: 1;
+                h3{
+                  width: 50%;
+                  font-family: "Montserrat-bold";
+                  color: #F0850B;
+                  font-size: 22px;
+                  margin-bottom: 8px;
+                  text-align: left;
+                }
+                p{
+                  margin-top: 9px;
+                  font-family: "Montserrat-regular";
+                  font-size: 16px;
+                  text-align: left;
+                  width: 85%;
+                }
+              }
+            }
+          }
+          .bloc2{
+            order: 1;
+            background-image: url("./img/picture/bloc-droit.png") !important;
+            transform: translate(-1px, -1px) !important;
+         
+            
+            
+            h3{
+              text-align: center !important;
+            }
+            
+          }
         }
-        .right{
-          background-image: url("../../img/picture/right.png")
+        .right {
+          background-image: url("./img/picture/right.png");
         }
         display: flex;
         width: 90%;
-        
+
         align-items: center;
         .bloc-a {
+          height: 185px;
           border: none;
           background: black;
           display: flex;
-          width: 48.902%;
+          width: 54.336%;
           border-radius: 22px;
           background-size: contain;
           background-repeat: no-repeat;
-          height: 195px;
+
           box-shadow: 10px 10px 6px #00000091;
+          
           .bloc1 {
             width: 65%;
+            display: flex;
+            align-items: center;
+           
           }
           .bloc2 {
-            background-image: url("../../img/picture/fleche-droite2.png");
+            background-image: url("./img/picture/fleche-droite2.png");
             width: 35%;
-            height: 100%;
+            height: 101%;
             border-radius: 18px;
             background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            transform: translate(1px, -1px);
+            h3 {
+              font-size: 4em;
+              width: 72%;
+              text-align: right;
+            }
           }
         }
         .bloc-b {
-         
-          width: 12%;
+          transform: translateY(25%);
+
+          width: 26%;
           background-repeat: no-repeat;
-          // background-size: cover;
-          height: 45%;
+          background-size: contain;
+          height: 220px;
           display: flex;
-         justify-items:  center;
+          justify-items: center;
+        }
+        .right {
+          margin-left: 5%;
+        }
+        .left {
+          margin-right: 5%;
         }
       }
     }
