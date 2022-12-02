@@ -896,7 +896,7 @@ footer .law a {
     font-size: 16px;
   }
   .processus-section .processus .bloc .bottom {
-    background-image: url("../../img/picture/fin.png");
+    background-image: url("./img/picture/fin.png");
     display: flex;
     transform: translate(15%, 45%) !important;
     height: 350px !important;
