@@ -35,18 +35,22 @@
       </div>
       <nav class="menu-dekstop">
         <ul>
-          <li><a href="./processus.html" class="link-header">Processus</a>
-            <div class="trait off"></div></li>
+          <li>
+            <a href="./processus.html" class="link-header">Processus</a>
+            <div class="trait off"></div>
+          </li>
           <li>
             <a href="./realisation.html" class="link-header">Réalisation</a>
             <div class="trait off"></div>
           </li>
           <li>
-            <a href="./prestation.html" class="link-header ">Prestation</a>
+            <a href="./prestation.html" class="link-header">Prestation</a>
             <div class="trait off"></div>
           </li>
-          <li><a href="./contact.html" class="link-header bold">Contact</a>
-            <div class="trait ok"></div></li>
+          <li>
+            <a href="./contact.html" class="link-header bold">Contact</a>
+            <div class="trait ok"></div>
+          </li>
         </ul>
       </nav>
     </header>
@@ -62,52 +66,60 @@
     </div>
     <section class="contact-section achievement-section">
       <h1>contact</h1>
-      <form action="contact.php" method="post" id="form">
-       <div class=" bloc bloc1">
-        <div class="div-form company">
-          <label for="companyName">Société :</label>
-          <input type="text" id="companyName" name="companyName" />
+      <form id="form">
+        <div class="bloc bloc1">
+          <div class="div-form company">
+            <label for="companyName">Société :</label>
+            <input type="text" id="companyName" name="companyName" />
+          </div>
+          <div class="div-form siret">
+            <label for="siret">N° SIRET :</label>
+            <input type="text" id="siret" name="siret" />
+          </div>
+          <div class="div-form phone">
+            <label for="phoneNumber"> N° Téléphone * :</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" required />
+          </div>
         </div>
-        <div class="div-form siret">
-          <label for="siret">N° SIRET :</label>
-          <input type="text" id="siret" name="siret" />
+        <div class="bloc bloc2">
+          <div class="div-form adress">
+            <label for="adress">Adresse  :</label>
+            <input type="text" id="adress" name="adress" required />
+          </div>
         </div>
-        <div class="div-form phone">
-          <label for="phoneNumber"> N° Téléphone :</label>
-          <input type="number" id="phoneNumber" name="phoneNumber" required />
+        <div class="bloc bloc3">
+          <div class="div-form lastName">
+            <label for="lastName">Nom * :</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+          <div class="div-form firstName">
+            <label for="firstName">Prénom * :</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="div-form email">
+            <label for="email">email *:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
         </div>
-       </div>
-       <div class=" bloc bloc2">
-        <div class="div-form adress">
-          <label for="adress">Adresse :</label>
-          <input type="text" id="adress" name="adress" required />
+        <div class="bloc bloc4">
+          <div class="div-form object">
+            <label for="object">Objet * :</label>
+            <input type="text" id="object" name="object" required/>
+          </div>
+          <div class="div-form div-message">
+            <label for="message" >Message * :</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              class="message"
+              required
+              
+            ></textarea>
+          </div>
         </div>
-        </div>
-        <div class=" bloc bloc3">
-        <div class="div-form lastName">
-          <label for="lastName">Nom :</label>
-          <input type="text" id="lastName" name="lastName" required />
-        </div>
-        <div class="div-form firstName">
-          <label for="firstName">Prénom :</label>
-          <input type="text" id="firstName" name="firstName" required/>
-        </div>
-        <div class="div-form email">
-          <label for="email">email:</label>
-          <input type="email" id="email" name="email" required/>
-        </div>
-        </div>
-        <div class=" bloc bloc4">
-        <div class="div-form object">
-          <label for="object">Objet :</label>
-          <input type="text" id="object" name="object" />
-        </div>
-        <div class="div-form div-message">
-          <label for="message">Message :</label>
-            <textarea name="message" id="message" cols="30" rows="10" class="message"></textarea>
-        </div>
-       </div>
-        <button type="submit">Envoyez</button>
+        <button type="submit" onclick="SendMail()">Envoyez</button>
       </form>
     </section>
     <div class="separation"></div>
@@ -171,6 +183,17 @@
       <div class="trait"></div>
     </footer>
 
-    <script src="./index.js"></script>
+    <script src="./index2.js"></script>
+    <script src="./email.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("X0out3LJ6pf_gSKx-");
+      })();
+    </script>
+    
   </body>
 </html>
