@@ -1,9 +1,41 @@
+.all-back{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+.div-back{
+  background:  #F2B704;
+display: flex;
+flex-direction: column;
+width: 75%;
+justify-content: space-around;
+align-items: center;
+height: 150px;
+border-radius: 15px;
+p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.back {
+  
+background: linear-gradient(#f0850b, #ea5d11);
+  color: white;
+  border-radius: 10px;
+  width: 12em;
+  height: 2em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}}}
 .contact-section {
   background: #e8e8e8 !important;
   form {
     color: #ea5d11;
     display: flex;
     width: 100%;
+   
 
     .div-form {
       display: flex;
@@ -15,6 +47,8 @@
         border-radius: 15px;
         box-shadow: inset 3px 3px 6px #00000082;
         border: none;
+        text-align: center;
+        color: #f1e102;
       }
       textarea {
         box-shadow: inset 3px 3px 6px #00000082;
@@ -48,7 +82,9 @@
       .div-message {
         height: 350px !important;
         .message {
-          height: 310px !important;
+          height: 250px !important;
+          width: 75%;
+          padding: 20px;
         }
       }
       .div-form {

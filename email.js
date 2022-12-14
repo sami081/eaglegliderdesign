@@ -3,6 +3,7 @@ const form = document.getElementById("form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 });
+
 function SendMail() {
   var params = {
     companyName: document.getElementById("companyName").value,
@@ -29,7 +30,8 @@ function SendMail() {
       .send("service_pq1jwhg", "template_zkq9xfl", params)
       .then(function (res) {
         console.log(res.status);
-        form.innerHTML = `<div> <p> Votre demande a bien été pris en compte </p> </div>`;
+        form.innerHTML = `<div class="all-back"><div class="div-back"> <p> Votre demande a bien été pris en compte </p> 
+        <a href="./contact.html" class="back"> Revenir au formulaire </a></div></div>`;
       });
   } else {
     alert("Veuillez remplir correctement le formulaire");

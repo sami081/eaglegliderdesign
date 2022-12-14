@@ -35,11 +35,14 @@
     .div-menu {
       display: flex;
       margin-top: 45px;
+      height: 320px;
       a {
+         display: none;
         background-color: transparent !important;
         border-radius: 0% !important;
         border: none !important;
         box-shadow: none !important;
+        transition: all 3s;
       }
     }
 
@@ -54,6 +57,7 @@
 
       transition: all 2s;
       a {
+        display: flex;
         color: #ffff;
         transition: all 3s;
       }

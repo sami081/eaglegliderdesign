@@ -237,12 +237,15 @@ header {
   .banner .div-menu {
     display: flex;
     margin-top: 45px;
+    height: 320px;
   }
   .banner .div-menu a {
+    display: none;
     background-color: transparent !important;
     border-radius: 0% !important;
     border: none !important;
     box-shadow: none !important;
+    transition: all 3s;
   }
   .banner .after {
     z-index: 2;
@@ -251,6 +254,7 @@ header {
     transition: all 2s;
   }
   .banner .after a {
+    display: flex;
     color: white;
     transition: all 3s;
   }
@@ -1635,6 +1639,39 @@ footer .law a {
     font-size: 1.3em;
   }
 }
+.all-back {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.all-back .div-back {
+  background: #F2B704;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+  border-radius: 15px;
+}
+.all-back .div-back p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.all-back .div-back .back {
+  background: linear-gradient(#f0850b, #ea5d11);
+  color: white;
+  border-radius: 10px;
+  width: 12em;
+  height: 2em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .contact-section {
   background: #e8e8e8 !important;
 }
@@ -1654,6 +1691,8 @@ footer .law a {
   border-radius: 15px;
   box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.5098039216);
   border: none;
+  text-align: center;
+  color: #f1e102;
 }
 .contact-section form .div-form textarea {
   box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.5098039216);
@@ -1684,7 +1723,9 @@ footer .law a {
     height: 350px !important;
   }
   .contact-section form .div-message .message {
-    height: 310px !important;
+    height: 250px !important;
+    width: 75%;
+    padding: 20px;
   }
   .contact-section form .div-form {
     width: 100%;
